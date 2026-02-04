@@ -2,6 +2,26 @@
 
 > Your commands are your toolkit. A consistent template means less thinking, more doing.
 
+## Make It Your Own
+
+After cloning, remove the original remote and create your own GitHub repository:
+
+**Windows (PowerShell)**
+```powershell
+git remote remove origin
+gh repo create cc-fundamentals-02-commands --public --source=. --remote=origin --push
+```
+
+**Mac / Linux**
+```bash
+git remote remove origin
+gh repo create cc-fundamentals-02-commands --public --source=. --remote=origin --push
+```
+
+> **Prerequisite:** Install the [GitHub CLI](https://cli.github.com/) — `winget install GitHub.cli` (Windows) or `brew install gh` (Mac), then run `gh auth login` once.
+
+---
+
 ## Before the Purpose
 
 Every time you find yourself repeating the same instructions to Claude Code, you're wasting keystrokes. Commands let you capture those patterns once and reuse them forever. But here's the thing - if every command looks different, you'll spend more time remembering how each one works than actually using them.
